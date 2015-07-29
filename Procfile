@@ -1,0 +1,1 @@
+web: gunicorn olark:app --log-file=-
