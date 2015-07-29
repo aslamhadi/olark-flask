@@ -15,7 +15,7 @@ def hello():
 def index():
     data = simplejson.loads(request.form['data'])
     print data
-    return jsonify(integrationUrl="http://test.com/%s/" % data['id'])
+    return jsonify(integrationUrl="https://still-tor-4534.herokuapp.com/%s/" % data['id'])
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=8001)
